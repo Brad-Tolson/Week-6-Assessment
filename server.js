@@ -52,7 +52,7 @@ app.get('/js', (req,res) => {
 
 app.get('/api/robots', (req, res) => {
     try {
-        res.status(200).send(botsArr)
+        res.status(200).send(bots)
         rollbar.info('Bots API endpoint loaded successfully.')
     } catch (error) {
         console.log('ERROR GETTING BOTS', error)
