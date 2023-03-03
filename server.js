@@ -12,10 +12,7 @@ var rollbar = new Rollbar({
   })
 
 app.use(express.json())
-app.use(cors( {
-    origin: 'http://13.58.192.4',
-    secure: true
-}))
+app.use(cors())
 app.use(express.static('public'));
 
 
